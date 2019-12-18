@@ -19,7 +19,7 @@ public class ReadProperties {
 		try {
 			resPath = Paths.get(resUrl.toURI());
 		} catch (URISyntaxException e) {
-			throw new AssertionError();
+			throw new AssertionError(e);
 		}
 		
 		// creo l'oggetto Properties
