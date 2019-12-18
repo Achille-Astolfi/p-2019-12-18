@@ -19,5 +19,10 @@ public class PhoneMain {
 		// voglio chiamare Di Stefano per sintire come va
 		Phone diStefano = dir.getPhoneByOwner("Di Stefano");
 		astolfi.call(diStefano);
+		
+		// adesso Di Stefano chiama Grimaldi
+		// a priori non so se è un Phone o un CordlessPhone, per cui la variabile la dichiaro Phone per il principio di sostituzione di Liskov
+		Phone grimaldi = dir.getPhoneByOwner("Grimaldi");
+		diStefano.call(grimaldi);
 	}
 }
