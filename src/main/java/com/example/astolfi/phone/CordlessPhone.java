@@ -1,11 +1,11 @@
-package com.example.aprea.phone;
+package com.example.astolfi.phone;
 
 /**
  * 
- * @author Vincenzo Aprea
+ * @author Achille Astolfi
  * @version 1.2
  * @see WirelessPhone
  */
 public class CordlessPhone extends WirelessPhone {
-	// aggiunte in caso di buchi di analisi
+
 }
