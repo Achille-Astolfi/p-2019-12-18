@@ -18,7 +18,7 @@ package com.example.aprea.phone;
  * @version 1.1
  *
  */
-public class WirelessPhone extends Phone {
+public abstract class WirelessPhone extends Phone {
 	// quando un metodo ereditato non ha body e noi lo scriviamo (quello che succede quando implementiamo un'interface) l'operazione si chaima "implement method";
 	// quando un metodo ereditato ha già un body ma noi lo sovrascriviamo (come in questo caso quando si estende una class) l'operazione si chiama "override method";
 	// eclipse raggruppa entrambe le opzioni nel menù Source -> Override/Implement Methods...

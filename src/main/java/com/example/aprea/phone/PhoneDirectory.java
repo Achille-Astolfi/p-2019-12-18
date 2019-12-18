@@ -23,14 +23,14 @@ public class PhoneDirectory {
 	public void loadDirectory() {
 		// in alternativa si sarebbe potuto inizializzare il campo directory in questo metodo
 //		Phone astolfi = new Phone();
-		Phone astolfi = new VintagePhone();
+		VintagePhone astolfi = new VintagePhone();
 		astolfi.setOwner("Astolfi");
 		astolfi.setNumber("1");
 		// per inserire il Phoone nel dizionario si usa il metodo put
 		this.directory.put(astolfi.getOwner(), astolfi);
 		//
 //		Phone diStefano = new Phone();
-		Phone diStefano = new VintagePhone();
+		VintagePhone diStefano = new VintagePhone();
 		diStefano.setOwner("Di Stefano");
 		diStefano.setNumber("4");
 		this.directory.put(diStefano.getOwner(), diStefano); // istruzione candidata a diventare un nano servizio
