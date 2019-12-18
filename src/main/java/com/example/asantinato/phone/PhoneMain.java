@@ -1,4 +1,4 @@
-package com.example.phone;
+package com.example.asantinato.phone;
 
 public class PhoneMain {
 	private static PhoneDirectory createAndInizialize() {
