@@ -13,9 +13,11 @@ package com.example.aprea.phone;
 // il vantaggio nel nostro caso, ad esempio, in questo esercizio, è che non devo fare modifiche al dizionario (Map<String, Phone>) che restituisce un valore Phone,
 // che quindi rimane un metodo valido anche per CordlessPhone
 /**
+ * Rinominata da CordlessPhone a WirelessPhone
  * 
  * @author Vincenzo Aprea
- * @version 1.1
+ * @version 1.2
+ * @since 1.1
  *
  */
 public abstract class WirelessPhone extends Phone {
