@@ -1,4 +1,4 @@
-package com.example.phone;
+package com.example.asantinato.phone;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -25,6 +25,11 @@ public class PhoneDirectory {
 		grimaldi.setOwner("Grimaldi");
 		grimaldi.setNumber("8");
 		this.directory.put(grimaldi.getOwner(), grimaldi);
+		
+		WirelessPhone crespan = new MobilePhone();
+		crespan.setOwner("Crespan");
+		crespan.setNumber("2");
+		this.directory.put(crespan.getOwner(), crespan);
 	}
 	
 	public Phone getPhoneByOwner(String owner) {

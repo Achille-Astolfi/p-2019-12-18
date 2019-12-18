@@ -7,7 +7,7 @@ import java.util.Map;
  * 
  * @author Vincenzo Aprea
  * 
- * @version 1.1
+ * @version 1.2
  * @since 1.0
  */
 public class PhoneDirectory {
@@ -23,14 +23,14 @@ public class PhoneDirectory {
 	public void loadDirectory() {
 		// in alternativa si sarebbe potuto inizializzare il campo directory in questo metodo
 //		Phone astolfi = new Phone();
-		Phone astolfi = new VintagePhone();
+		VintagePhone astolfi = new VintagePhone();
 		astolfi.setOwner("Astolfi");
 		astolfi.setNumber("1");
 		// per inserire il Phoone nel dizionario si usa il metodo put
 		this.directory.put(astolfi.getOwner(), astolfi);
 		//
 //		Phone diStefano = new Phone();
-		Phone diStefano = new VintagePhone();
+		VintagePhone diStefano = new VintagePhone();
 		diStefano.setOwner("Di Stefano");
 		diStefano.setNumber("4");
 		this.directory.put(diStefano.getOwner(), diStefano); // istruzione candidata a diventare un nano servizio
@@ -42,6 +42,16 @@ public class PhoneDirectory {
 		// grimaldi è una variabile di tipo CordlessPhone che punta ad un oggetto CordlessPhone
 		// ma per il principio di sostituzione di Liskov posso usarlo come argomento per il parametro di tipo Phone del metodo put
 		this.directory.put(grimaldi.getOwner(), grimaldi);
+		//
+		// Crespan con numero 2
+		MobilePhone crespan = new MobilePhone();
+		crespan.setOwner("Crespan");
+		crespan.setNumber("2");
+		// lancio il metodo dell'oggetto della classe MobilePhone
+		crespan.addNumberToPhoneBook("4", "Fede");
+		this.directory.put(crespan.getOwner(), crespan);
+		
+		
 	}
 	
 	
