@@ -16,5 +16,9 @@ public class PhoneMain {
 		Phone grimaldi= dir.getPhoneByOwner("Grimaldi");
 		diStefano.call(grimaldi);
 		grimaldi.incomingCall(grimaldi);
+		Phone crespan= dir.getPhoneByOwner("Crespan");
+		crespan.call(grimaldi);
+		crespan.incomingCall(diStefano);
 	}
+	
 }

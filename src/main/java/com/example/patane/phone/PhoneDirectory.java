@@ -20,8 +20,13 @@ public class PhoneDirectory {
 		CordlessPhone grimaldi= new CordlessPhone();
 		grimaldi.setOwner("Grimaldi");
 		grimaldi.setNumber("8");
-		this.direcroty.put(grimaldi.getNumber(), grimaldi);
+		this.direcroty.put(grimaldi.getOwner(), grimaldi);
 		
+		MobilePhone crespan= new MobilePhone();
+		crespan.setNumber("2");
+		crespan.setOwner("Crespan");
+		crespan.addNumberToPhoneBook("4", "Fede");
+		this.direcroty.put(crespan.getOwner(), crespan);
 	}
 
 	public Phone getPhoneByOwner(String owner) {
