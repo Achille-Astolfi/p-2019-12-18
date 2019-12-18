@@ -19,5 +19,11 @@ public class PhoneMain {
 		Phone diStefano = dir.getPhoneByOwner("Di Stefano");
 		
 		astolfi.call(diStefano);
+		
+		// adesso Di Stefano chiama Grimaldi
+		// a priori non so che Grimaldi ha un cordless, per cui la variabile la dichiaro Phone
+		// ringraziamo anche stavolta il principio di sostituzione di Liskov
+		Phone grimaldi = dir.getPhoneByOwner("Grimaldi");
+		diStefano.call(grimaldi);
 	}
 }
