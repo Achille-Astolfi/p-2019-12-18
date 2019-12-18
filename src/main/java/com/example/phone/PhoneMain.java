@@ -17,5 +17,10 @@ public class PhoneMain {
 		Phone diStefano = phoneDir.getPhoneByOwner("Di Stefano");
 		
 		astolfi.call(diStefano);
+		
+		Phone grimaldi = phoneDir.getPhoneByOwner("Grimaldi");
+		// Di Stefano vuole chiamare Grimaldi per sapere come va
+				
+		diStefano.call(grimaldi);
 	}
 }
