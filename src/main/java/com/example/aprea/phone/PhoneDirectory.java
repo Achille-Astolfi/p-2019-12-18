@@ -7,7 +7,7 @@ import java.util.Map;
  * 
  * @author Vincenzo Aprea
  * 
- * @version 1.1
+ * @version 1.2
  * @since 1.0
  */
 public class PhoneDirectory {
@@ -47,7 +47,11 @@ public class PhoneDirectory {
 		MobilePhone crespan = new MobilePhone();
 		crespan.setOwner("Crespan");
 		crespan.setNumber("2");
+		// lancio il metodo dell'oggetto della classe MobilePhone
+		crespan.addNumberToPhoneBook("4", "Fede");
 		this.directory.put(crespan.getOwner(), crespan);
+		
+		
 	}
 	
 	
