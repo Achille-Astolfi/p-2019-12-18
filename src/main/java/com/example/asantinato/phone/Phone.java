@@ -1,4 +1,4 @@
-package com.example.phone;
+package com.example.asantinato.phone;
 
 public abstract class Phone {
 	private String number;
