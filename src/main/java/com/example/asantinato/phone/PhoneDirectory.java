@@ -21,7 +21,7 @@ public class PhoneDirectory {
 		diStefano.setNumber("4");
 		this.directory.put(diStefano.getOwner(), diStefano);
 
-		CordlessPhone grimaldi = new CordlessPhone();
+		WirelessPhone grimaldi = new WirelessPhone();
 		grimaldi.setOwner("Grimaldi");
 		grimaldi.setNumber("8");
 		this.directory.put(grimaldi.getOwner(), grimaldi);
