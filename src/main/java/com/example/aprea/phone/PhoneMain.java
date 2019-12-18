@@ -24,5 +24,9 @@ public class PhoneMain {
 		// a priori non so se è un Phone o un CordlessPhone, per cui la variabile la dichiaro Phone per il principio di sostituzione di Liskov
 		Phone grimaldi = dir.getPhoneByOwner("Grimaldi");
 		diStefano.call(grimaldi);
+		
+		// Di Stefano chiama Crespan, verifica che funzioni e poi metti WirelessPhone come abstract e crea CordlessPhone per assegnare grimaldi all'oggetto CordlessPhone
+		Phone crespan = dir.getPhoneByOwner("Crespan");
+		grimaldi.call(crespan);
 	}
 }

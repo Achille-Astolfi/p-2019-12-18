@@ -42,6 +42,12 @@ public class PhoneDirectory {
 		// grimaldi è una variabile di tipo CordlessPhone che punta ad un oggetto CordlessPhone
 		// ma per il principio di sostituzione di Liskov posso usarlo come argomento per il parametro di tipo Phone del metodo put
 		this.directory.put(grimaldi.getOwner(), grimaldi);
+		//
+		// Crespan con numero 2
+		MobilePhone crespan = new MobilePhone();
+		crespan.setOwner("Crespan");
+		crespan.setNumber("2");
+		this.directory.put(crespan.getOwner(), crespan);
 	}
 	
 	
