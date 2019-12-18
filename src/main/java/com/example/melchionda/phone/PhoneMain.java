@@ -24,7 +24,9 @@ public class PhoneMain {
 		// ringraziamo anche stavolta il principio di sostituzione di Liskov
 		Phone grimaldi = dir.getPhoneByOwner("Grimaldi");
 		diStefano.call(grimaldi);
-		
+			
+		Phone crespan=dir.getPhoneByOwner("Crespan");
+		diStefano.call(crespan); 
 	}
 }
 

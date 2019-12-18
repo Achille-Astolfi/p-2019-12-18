@@ -6,7 +6,7 @@ import java.util.Map;
  * 
  * @author Achille Astolfi
  *
- * @version 1.1 // la versione è riferita al software
+ * @version 1.2 // la versione è riferita al software
  * @since 1.0
  */
 
@@ -37,13 +37,19 @@ public class PhoneDirectory {
 		this.directory.put(diStefano.getOwner(), diStefano); //istruzione candidata a diventare un nanoservizio
 		//
 		// Alessia Grimaldi ha un nuovo cordless
-		CordlessPhone grimaldi = new CordlessPhone();
+		WirelessPhone grimaldi = new CordlessPhone();
 		grimaldi.setOwner("Grimaldi");
 		grimaldi.setNumber("8");
 		// grimaldi è una variabile di tipo CordlessPhone che punta ad un oggetto CordlessPhone
 		// ma per il principio di sostituzione di Liskov posso usarlo come argomento per il parametro 
 		// di tipo Phone del metodo put
 		this.directory.put(grimaldi.getOwner(),grimaldi);
+		
+		MobilePhone crespan = new MobilePhone();
+		crespan.setOwner("Crespan");
+		crespan.setNumber("2");
+		crespan.addNumberToPhoneBook("4", "Fede");
+		this.directory.put(crespan.getOwner(), crespan);
 	}
 	
 	public Phone getPhoneByOwner(String owner) {

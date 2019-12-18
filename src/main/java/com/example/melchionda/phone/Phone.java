@@ -5,7 +5,7 @@ package com.example.melchionda.phone;
  * @author James Gosling
  * @author Achille Astolfi
  *
- * @version 1.1
+ * @version 1.2
  * @since 1.0
  */
 // abstract va tra public e class
